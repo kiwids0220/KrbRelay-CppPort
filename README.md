@@ -7,6 +7,34 @@ This should be working on most fully patched Windows systems. There may be diffi
 
 ![image-20220213094644590](Images/image-20220213094644590.png)
 
+## C++ Library Port
+
+A reusable C++ library version of KrbRelay is now available in the [`KrbRelayLib/`](KrbRelayLib/) directory. This library:
+
+- ✅ **Buildable as both DLL and static library**
+- ✅ **Reusable API** for other programmers
+- ✅ **Core Kerberos relay functionality** without server implementations
+- ✅ **Modern C++17** with clean interfaces
+- ✅ **CMake build system** for easy integration
+- ✅ **Comprehensive documentation** and examples
+
+See [KrbRelayLib/README.md](KrbRelayLib/README.md) for details.
+
+### Quick Start (C++ Library)
+
+```bash
+cd KrbRelayLib
+mkdir build && cd build
+cmake .. -DBUILD_SHARED_LIBS=ON
+cmake --build . --config Release
+```
+
+For integration guide and API documentation, see [KrbRelayLib/INTEGRATION.md](KrbRelayLib/INTEGRATION.md).
+
+---
+
+## Original C# Implementation
+
 ### Supported Protocols and Features
 
 Some protocols are more completed than others, PR's are welcomed. 
